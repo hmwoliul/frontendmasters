@@ -9,7 +9,19 @@ img {
 }
 
 blockquote {
-    font-family: Georgia, 'Times New Roman', Times, serif;font-size: 3rem; /* (relative em) relative to browser for the font size by default, 1em=16px */
+    /* The font-family property is set to Georgia, 'Times New Roman', Times, serif.
+   This means that the browser will try to display the text in the Georgia font,
+   if it's not available, it will try 'Times New Roman', then Times, and finally serif if none of the others are available. */
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    /* The font-size property is set to 3rem.
+       The rem unit represents the font-size of the root element (html).
+       In this case, the font size is 3 times the size of the root element's font size.
+       The comment explains that 1em is equal to 16px by default in most browsers,
+       so 3rem would be equivalent to 48px. */
+
+    font-size: 3rem;
     font-style: italic;
     text-align: center;
 }
